@@ -2,6 +2,8 @@
 
 Arabic (RTL) PDF toolbox that runs 100% in the browser. No upload, no server-side processing, no account.
 
+**Live:** https://abdullahalmutairi97.github.io/awraq/
+
 ## Tools
 - **ترتيب الصفحات** — thumbnails grid: reorder (drag or arrows), rotate, delete with undo, save as a new PDF.
 - **دمج PDF** — combine several PDFs in any order, drag to sort rows.
@@ -22,7 +24,12 @@ sudo systemctl restart awraq     # after editing files
 ```
 Local: `http://127.0.0.1:8090/` · Tailnet: `http://vps.tail9b4114.ts.net:8090/`
 
-Public: `https://pdf.abdullahalmutairi.dev` — nginx vhost `/etc/nginx/sites-available/awraq` serves this folder directly (gzip + 30-day cache on `vendor/`, `assets/`). Needs the DNS A record `pdf` → `84.8.98.65`; `awraq-tls.timer` checks DNS every 3 minutes and issues the Let's Encrypt cert (with `--redirect`) the moment it resolves, then disables itself. nginx runs as `www-data`, so `/home/pinpin` must stay `o+x` (traverse only, no listing).
+## Deploy (GitHub Pages)
+The site is published from `Abdullahalmutairi97/awraq` branch `main`; every push rebuilds it in ~40 s.
+```bash
+cd /home/pinpin/pdf-suite && ./deploy.sh "وصف التغيير"
+```
+`/home/pinpin/.ssh/config` has a `github-awraq` host entry that uses the repo's write deploy key, so no credentials are needed here. `.nojekyll` keeps Pages from running Jekyll; `.assetsignore` keeps `preview/` and docs out of the published site; `404.html` is served for unknown paths.
 
 ## Files
 - `index.html` — shell, header, tool cards, workspace, result, toast
