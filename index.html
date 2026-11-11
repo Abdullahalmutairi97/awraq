@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أوراق — أدوات PDF بسيطة</title>
+<meta name="description" content="دمج، ترتيب، تقسيم PDF وتحويل الصور إلى PDF — كل شيء يعمل داخل متصفحك بدون رفع أي ملف.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#0E7C66">
+<meta property="og:type" content="website">
+<meta property="og:title" content="أوراق — أدوات PDF بسيطة">
+<meta property="og:description" content="دمج، ترتيب، تقسيم PDF وتحويل الصور إلى PDF — بدون رفع أي ملف.">
+<meta property="og:locale" content="ar_SA">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230E7C66'/%3E%3Cpath d='M11 8h6l5 5v11a1.6 1.6 0 0 1-1.6 1.6H11A1.6 1.6 0 0 1 9.4 24V9.6A1.6 1.6 0 0 1 11 8Z' fill='%23fff'/%3E%3Cpath d='M17 8v5h5' fill='none' stroke='%230E7C66' stroke-width='1.5'/%3E%3Cpath d='M12.6 17.4h6.8M12.6 20.6h4.6' stroke='%230E7C66' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#" aria-label="أوراق — الصفحة الرئيسية">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="currentColor"/><path d="M11 8h6l5 5v11a1.6 1.6 0 0 1-1.6 1.6H11A1.6 1.6 0 0 1 9.4 24V9.6A1.6 1.6 0 0 1 11 8Z" fill="#fff"/><path d="M17 8v5h5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12.6 17.4h6.8M12.6 20.6h4.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-text"><strong>أوراق</strong><small>أدوات PDF</small></span>
+    </a>
+    <p class="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2"/><path d="M8 10.5V7.6a4 4 0 0 1 8 0v2.9"/></svg><span class="long">يعمل على جهازك — لا يُرفع أي ملف</span><span class="short">على جهازك</span></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="intro">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>4 أدوات · بدون تسجيل</p>
+    <h1>كل أدوات PDF، في مكان واحد.</h1>
+    <p class="lede">رتّب الصفحات، ادمج الملفات، قسّمها، أو حوّل صورك إلى PDF — كله داخل متصفحك، وبسرعة.</p>
+  </section>
+
+  <nav class="tools" id="tools" aria-label="اختر أداة">
+    <button class="tool-card" data-tool="merge" type="button" aria-pressed="false">
+      <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.4 4.6h3.4L12 11.2l4.2-6.6h3.4"/><path d="M12 11.2v8.4"/><path d="M8.9 16.5 12 19.6l3.1-3.1"/></svg></span>
+      <span class="tool-body"><span class="tool-title">دمج PDF</span><span class="tool-desc">اجمع عدة ملفات في ملف واحد بالترتيب الذي تريده.</span></span>
+    </button>
+
+    <button class="tool-card" data-tool="organize" type="button" aria-pressed="false">
+      <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7.4" height="7.4" rx="2"/><rect x="13.6" y="3" width="7.4" height="7.4" rx="2"/><rect x="3" y="13.6" width="7.4" height="7.4" rx="2"/><rect x="13.6" y="13.6" width="7.4" height="7.4" rx="2"/><path d="M17.3 17.3l-2.2-2.2M15.1 17.3l2.2-2.2" opacity=".0"/></svg></span>
+      <span class="tool-body"><span class="tool-title">ترتيب الصفحات</span><span class="tool-desc">اسحب، احذف، أو دوّر أي صفحة ثم احفظ النتيجة.</span></span>
+    </button>
+
+    <button class="tool-card" data-tool="split" type="button" aria-pressed="false">
+      <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.8"/><circle cx="6" cy="18" r="2.8"/><path d="M20.2 3.8 8.1 15.9M14.4 14.4l5.8 5.8M8.1 8.1l3.6 3.6"/></svg></span>
+      <span class="tool-body"><span class="tool-title">تقسيم PDF</span><span class="tool-desc">قسّم الملف إلى صفحات أو نطاقات تحدّدها.</span></span>
+    </button>
+
+    <button class="tool-card" data-tool="images" type="button" aria-pressed="false">
+      <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2.6"/><circle cx="8.6" cy="8.6" r="1.6"/><path d="M21 15.2 16.4 10.6 5.2 21"/></svg></span>
+      <span class="tool-body"><span class="tool-title">صور إلى PDF</span><span class="tool-desc">حوّل صور JPG وPNG إلى ملف PDF واحد.</span></span>
+    </button>
+  </nav>
+
+  <section class="workspace" id="workspace" hidden aria-labelledby="wsName">
+    <header class="ws-head">
+      <div class="ws-title">
+        <span class="ws-icon" id="wsIcon" aria-hidden="true"></span>
+        <div>
+          <h2 id="wsName">دمج PDF</h2>
+          <p id="wsHint"></p>
+        </div>
+      </div>
+      <button class="btn ghost sm" id="wsClose" type="button">إغلاق</button>
+    </header>
+
+    <div class="drop" id="drop" tabindex="0" role="button" aria-label="اختر ملفات">
+      <span class="drop-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15.5V3.5M12 3.5 8.2 7.3M12 3.5l3.8 3.8"/><path d="M4 15v3.2A2.8 2.8 0 0 0 6.8 21h10.4A2.8 2.8 0 0 0 20 18.2V15"/></svg></span>
+      <p class="drop-title" id="dropTitle">اسحب الملفات هنا</p>
+      <p class="drop-hint" id="dropHint">PDF فقط · يمكنك إضافة أكثر من ملف</p>
+      <button class="btn primary" id="pickBtn" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>اختيار الملفات
+      </button>
+      <input type="file" id="fileInput" multiple hidden>
+    </div>
+
+    <div class="files" id="fileList" role="list"></div>
+
+    <div class="pages-wrap" id="pagesWrap" hidden>
+      <div class="page-tools">
+        <label class="check"><input type="checkbox" id="selectAll"><span>تحديد الكل</span></label>
+        <span class="sel-count" id="selCount" aria-live="polite"></span>
+        <div class="page-actions">
+          <button class="btn ghost icon" data-act="move-start" type="button" title="تقديم الصفحات المحددة" aria-label="تقديم الصفحات المحددة"><svg viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button>
+          <button class="btn ghost icon" data-act="move-end" type="button" title="تأخير الصفحات المحددة" aria-label="تأخير الصفحات المحددة"><svg viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg></button>
+          <span class="sep" aria-hidden="true"></span>
+          <button class="btn ghost sm" data-act="rotate" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 4.5v5h-5"/><path d="M19.6 14a8 8 0 1 1-1.3-8.5l2.2 2"/></svg>تدوير</button>
+          <button class="btn ghost sm danger" data-act="delete" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h17M9 6.5V4.2c0-.7.5-1.2 1.2-1.2h3.6c.7 0 1.2.5 1.2 1.2v2.3M18.6 6.5 17.6 20a2 2 0 0 1-2 1.9H8.4a2 2 0 0 1-2-1.9L5.4 6.5"/></svg>حذف</button>
+        </div>
+      </div>
+      <div class="pages" id="pageGrid"></div>
+    </div>
+
+    <div class="options" id="options" hidden>
+      <div data-opt="split" hidden>
+        <fieldset class="fieldset">
+          <legend>طريقة التقسيم</legend>
+          <label class="radio"><input type="radio" name="splitMode" value="every" checked><span>كل صفحة في ملف منفصل</span></label>
+          <label class="radio"><input type="radio" name="splitMode" value="ranges"><span>نطاقات أحددها</span></label>
+        </fieldset>
+        <div class="range-row" id="rangeRow" hidden>
+          <input class="input" id="rangeInput" type="text" inputmode="numeric" placeholder="مثال: 1-3, 5, 8-10" autocomplete="off">
+          <span class="range-hint" id="rangeHint"></span>
+        </div>
+      </div>
+      <div data-opt="images" hidden>
+        <fieldset class="fieldset">
+          <legend>حجم الصفحة</legend>
+          <label class="radio"><input type="radio" name="imgSize" value="fit" checked><span>ملاءمة الصفحة للصورة</span></label>
+          <label class="radio"><input type="radio" name="imgSize" value="a4"><span>A4 مع هوامش بيضاء</span></label>
+        </fieldset>
+      </div>
+    </div>
+
+    <footer class="actionbar">
+      <span class="count" id="countLabel">لا ملفات بعد</span>
+      <div class="actions">
+        <button class="btn ghost" id="clearBtn" type="button">مسح</button>
+        <button class="btn primary" id="runBtn" type="button" disabled>
+          <span class="spinner" aria-hidden="true"></span><span id="runLabel">دمج الملفات</span>
+        </button>
+      </div>
+    </footer>
+  </section>
+
+  <section class="result" id="result" hidden aria-live="polite">
+    <span class="result-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6.5 9.6 17 4 11.4"/></svg></span>
+    <h2>تم إنشاء الملف</h2>
+    <p class="result-file"><span id="resultName">ملف.pdf</span><span class="dot-sep" aria-hidden="true">·</span><span id="resultSize">0 KB</span></p>
+    <p class="result-note" id="resultNote">نزّل الملف الآن — لن نحتفظ بأي نسخة.</p>
+    <div class="result-actions">
+      <button class="btn primary" id="downloadBtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v12M12 15.5 8.2 11.7M12 15.5l3.8-3.8"/><path d="M4 16v2.2A2.8 2.8 0 0 0 6.8 21h10.4A2.8 2.8 0 0 0 20 18.2V16"/></svg>تحميل</button>
+      <button class="btn ghost" id="againBtn" type="button">ملف آخر</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <p>كل المعالجة تحدث داخل متصفحك — لا سيرفر، ولا حساب.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="vendor/pdf-lib.min.js"></script>
+<script src="vendor/pdf.min.js"></script>
+<script src="vendor/jszip.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

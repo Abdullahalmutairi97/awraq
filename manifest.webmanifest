@@ -1,0 +1,17 @@
+{
+  "name": "أوراق — أدوات PDF",
+  "short_name": "أوراق",
+  "description": "دمج، ترتيب، تقسيم PDF وتحويل الصور إلى PDF — كل شيء داخل المتصفح بدون رفع أي ملف.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F3F5F2",
+  "theme_color": "#0E7C66",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
